@@ -1,19 +1,47 @@
-<h2>📚 Contenido</h2>
+<h1 id="ciclos">🔄 Ciclos (Bucles) en Java</h1>
 
-<ul>
-<li><a href="#ciclos">🔄 Ciclos</a></li>
-<li><a href="#metodos">⚙️ Métodos</a></li>
-<li><a href="#vectores">📊 Vectores y Matrices</a></li>
-<li><a href="#listas">📋 Listas</a></li>
-<li><a href="#archivos">📁 Manejo de Archivos</a></li>
-</ul>
-
-<hr>
-
-<h1 id="ciclos">🔄 Ciclos (Bucles)</h1>
+<h2>📖 Introducción</h2>
 
 <p>
-Los ciclos permiten repetir instrucciones automáticamente varias veces sin escribir el mismo código repetidamente.
+Cuando comenzamos a programar, muchas veces necesitamos realizar una misma tarea varias veces. Por ejemplo, mostrar los números del 1 al 100, calcular las notas de varios estudiantes o recorrer una lista de datos.
+</p>
+
+<p>
+Si intentáramos hacer esto escribiendo una instrucción para cada caso, el programa sería muy largo y difícil de mantener. Para solucionar este problema existen los ciclos o bucles.
+</p>
+
+<p>
+Un ciclo es una estructura de control que permite repetir un bloque de instrucciones varias veces mientras se cumpla una condición determinada.
+</p>
+
+<h2>🌎 Ejemplo de la vida real</h2>
+
+<p>
+Imagina que eres profesor y necesitas pasar asistencia a 30 estudiantes. En lugar de repetir la misma acción 30 veces manualmente, realizas el mismo proceso hasta terminar la lista. Los ciclos funcionan de manera similar.
+</p>
+
+<h2>🎯 ¿Para qué sirven los ciclos?</h2>
+
+<ul>
+<li>Automatizar tareas repetitivas.</li>
+<li>Ahorrar tiempo al programador.</li>
+<li>Reducir la cantidad de código.</li>
+<li>Procesar grandes cantidades de datos.</li>
+<li>Recorrer vectores, matrices y listas.</li>
+</ul>
+
+<h2>📚 Tipos de ciclos en Java</h2>
+
+<ul>
+<li>for</li>
+<li>while</li>
+<li>do-while</li>
+</ul>
+
+<h2>🔹 Ciclo For</h2>
+
+<p>
+El ciclo for se utiliza cuando conocemos exactamente cuántas veces queremos repetir una acción.
 </p>
 
 <pre>
@@ -24,42 +52,49 @@ for(int i = 1; i <= 5; i++){
 </code>
 </pre>
 
-<hr>
+<h3>📝 Explicación línea por línea</h3>
 
-<h1 id="metodos">⚙️ Métodos (Funciones)</h1>
+<ul>
+<li><b>int i = 1</b>: crea una variable llamada i y le asigna el valor inicial 1.</li>
+<li><b>i <= 5</b>: indica que el ciclo continuará mientras i sea menor o igual a 5.</li>
+<li><b>i++</b>: incrementa el valor de i en una unidad cada vez que se ejecuta el ciclo.</li>
+<li><b>System.out.println(i)</b>: muestra el valor actual de i en la pantalla.</li>
+</ul>
+
+<h3>📤 Resultado</h3>
+
+<pre>
+1
+2
+3
+4
+5
+</pre>
+
+<h2>⚠️ Error común</h2>
 
 <p>
-Los métodos permiten reutilizar bloques de código para realizar tareas específicas.
+Muchos principiantes olvidan incrementar la variable del ciclo. Esto provoca que el ciclo nunca termine y el programa se ejecute indefinidamente.
 </p>
+
+<h2>🎯 Ejercicio Propuesto</h2>
+
+<p>
+Crear un programa que muestre los números del 1 al 20 utilizando un ciclo for.
+</p>
+
+<h2>✅ Solución</h2>
 
 <pre>
 <code>
-public static int suma(int a, int b){
-    return a + b;
+for(int i = 1; i <= 20; i++){
+    System.out.println(i);
 }
 </code>
 </pre>
 
-<hr>
-
-<h1 id="vectores">📊 Vectores y Matrices</h1>
+<h2>🏆 Conclusión</h2>
 
 <p>
-Los vectores almacenan varios datos del mismo tipo y las matrices organizan datos en filas y columnas.
-</p>
-
-<hr>
-
-<h1 id="listas">📋 Listas</h1>
-
-<p>
-Las listas permiten almacenar elementos dinámicamente.
-</p>
-
-<hr>
-
-<h1 id="archivos">📁 Manejo de Archivos</h1>
-
-<p>
-Permite guardar y recuperar información desde archivos.
+Los ciclos son una de las herramientas más importantes de la programación porque permiten automatizar tareas repetitivas y crear programas más eficientes.
 </p>
