@@ -13,10 +13,10 @@ body{
     color:white;
 }
 
-/* ENCABEZADO */
+/* HEADER */
 header{
     text-align:center;
-    padding:30px;
+    padding:25px;
 }
 
 header h1{
@@ -40,11 +40,6 @@ header h1{
     cursor:pointer;
     font-weight:bold;
     color:white;
-    transition:0.3s;
-}
-
-.menu button:hover{
-    transform:scale(1.1);
 }
 
 /* COLORES */
@@ -91,63 +86,127 @@ footer{
 <body>
 
 <header>
-    <h1>💻 Tutorial de Programación en Java</h1>
-    <p>Proyecto educativo sencillo</p>
+<h1>💻 Tutorial de Programación en Java</h1>
+<p>Conceptos básicos explicados de forma sencilla</p>
 </header>
 
 <!-- MENU -->
 <div class="menu">
-    <button class="c1" onclick="mostrar('ciclos')">Ciclos</button>
-    <button class="c2" onclick="mostrar('metodos')">Métodos</button>
-    <button class="c3" onclick="mostrar('vectores')">Vectores</button>
-    <button class="c4" onclick="mostrar('listas')">Listas</button>
-    <button class="c5" onclick="mostrar('archivos')">Archivos</button>
+<button class="c1" onclick="mostrar('ciclos')">Ciclos</button>
+<button class="c2" onclick="mostrar('metodos')">Métodos</button>
+<button class="c3" onclick="mostrar('vectores')">Vectores</button>
+<button class="c4" onclick="mostrar('listas')">Listas</button>
+<button class="c5" onclick="mostrar('archivos')">Archivos</button>
 </div>
 
 <div class="contenido">
 
+<!-- CICLOS -->
 <div id="ciclos" class="seccion">
-<h2>🔄 Ciclos</h2>
-<p>Repetición de instrucciones.</p>
+<h2>🔄 Ciclos (Bucles)</h2>
+
+<p>
+Los ciclos permiten repetir un bloque de código varias veces sin tener que escribirlo muchas veces.
+Son muy útiles cuando quieres automatizar tareas repetitivas.
+</p>
+
+<p><b>¿Para qué sirven?</b></p>
+<ul>
+<li>Repetir instrucciones</li>
+<li>Recorrer listas o arreglos</li>
+<li>Ahorrar código</li>
+</ul>
+
 <code>
 for(int i=1;i<=5;i++){
-    System.out.println(i);
+    System.out.println("Número: " + i);
 }
 </code>
 </div>
 
+<!-- METODOS -->
 <div id="metodos" class="seccion">
 <h2>⚙️ Métodos</h2>
-<p>Bloques de código reutilizables.</p>
+
+<p>
+Un método es un bloque de código que realiza una tarea específica.
+Se usa para organizar mejor el programa y evitar repetir código.
+</p>
+
+<p><b>¿Para qué sirven?</b></p>
+<ul>
+<li>Reutilizar código</li>
+<li>Organizar el programa</li>
+<li>Hacer el código más limpio</li>
+</ul>
+
 <code>
-public static void hola(){
-    System.out.println("Hola");
+public static void saludar(){
+    System.out.println("Hola, bienvenido");
 }
 </code>
 </div>
 
+<!-- VECTORES -->
 <div id="vectores" class="seccion">
-<h2>📊 Vectores</h2>
-<p>Arreglos de datos.</p>
+<h2>📊 Vectores (Arreglos)</h2>
+
+<p>
+Un vector es una estructura que almacena varios datos del mismo tipo en una sola variable.
+</p>
+
+<p><b>¿Para qué sirven?</b></p>
+<ul>
+<li>Guardar múltiples valores</li>
+<li>Acceder rápido a datos</li>
+<li>Organizar información</li>
+</ul>
+
 <code>
-int[] v = {1,2,3,4};
+int[] numeros = {10, 20, 30, 40};
+System.out.println(numeros[0]);
 </code>
 </div>
 
+<!-- LISTAS -->
 <div id="listas" class="seccion">
 <h2>📋 Listas</h2>
-<p>Estructuras dinámicas.</p>
+
+<p>
+Las listas son estructuras dinámicas que pueden crecer o reducirse según lo que necesites.
+</p>
+
+<p><b>¿Para qué sirven?</b></p>
+<ul>
+<li>Guardar datos sin límite fijo</li>
+<li>Agregar y eliminar elementos</li>
+<li>Manejo de información flexible</li>
+</ul>
+
 <code>
 ArrayList<String> lista = new ArrayList<>();
-lista.add("Hola");
+lista.add("Juan");
+lista.add("Maria");
 </code>
 </div>
 
+<!-- ARCHIVOS -->
 <div id="archivos" class="seccion">
 <h2>📁 Archivos</h2>
-<p>Lectura y escritura.</p>
+
+<p>
+El manejo de archivos permite guardar información en el computador y leerla después.
+</p>
+
+<p><b>¿Para qué sirve?</b></p>
+<ul>
+<li>Guardar datos permanentemente</li>
+<li>Leer información guardada</li>
+<li>Crear programas más avanzados</li>
+</ul>
+
 <code>
-File f = new File("datos.txt");
+File archivo = new File("datos.txt");
 </code>
 </div>
 
