@@ -1,0 +1,138 @@
+```html
+<div style="background:linear-gradient(135deg,#0A0F0D,#264653,#2A9D8F);padding:40px;border-radius:20px;color:white;">
+
+<h1 style="text-align:center;font-size:55px;color:#FFD60A;">
+📁 Manejo de Archivos en Java
+</h1>
+
+<p style="font-size:20px;text-align:justify;">
+El manejo de archivos permite guardar y recuperar información desde archivos almacenados en la computadora. Es una herramienta fundamental porque permite conservar datos incluso después de cerrar un programa.
+</p>
+
+<h2 style="color:#00E5FF;">🤔 ¿Qué es un archivo?</h2>
+
+<p style="font-size:18px;">
+Un archivo es un conjunto de datos almacenados permanentemente en un dispositivo de almacenamiento, como un disco duro o memoria USB.
+</p>
+
+<h2 style="color:#00E5FF;">🌍 Ejemplo de la vida real</h2>
+
+<p style="font-size:18px;">
+Cuando guardas una tarea en Word o una fotografía en tu computadora, estás utilizando archivos. Los programas usan archivos para almacenar información importante.
+</p>
+
+<h2 style="color:#FFD60A;">🎯 ¿Para qué sirve?</h2>
+
+<ul style="font-size:18px;">
+<li>✅ Guardar información.</li>
+<li>✅ Recuperar datos almacenados.</li>
+<li>✅ Crear reportes.</li>
+<li>✅ Registrar usuarios.</li>
+<li>✅ Almacenar configuraciones.</li>
+</ul>
+
+<h2 style="color:#00E5FF;">💻 Escribir en un archivo</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+FileWriter archivo = new FileWriter("datos.txt");
+
+archivo.write("Hola Mundo");
+
+archivo.close();
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">📝 Explicación</h2>
+
+<ul style="font-size:18px;">
+<li><b>FileWriter</b> crea o abre un archivo.</li>
+<li><b>write()</b> escribe información.</li>
+<li><b>close()</b> guarda los cambios y cierra el archivo.</li>
+</ul>
+
+<h2 style="color:#00E5FF;">📖 Leer un archivo</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+Scanner lector = new Scanner(new File("datos.txt"));
+
+while(lector.hasNextLine()){
+    System.out.println(lector.nextLine());
+}
+
+lector.close();
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">📝 Explicación</h2>
+
+<ul style="font-size:18px;">
+<li>Abre el archivo.</li>
+<li>Lee línea por línea.</li>
+<li>Muestra el contenido.</li>
+<li>Cierra el archivo.</li>
+</ul>
+
+<h2 style="color:#00E5FF;">🎯 Ejercicio</h2>
+
+<p style="font-size:18px;">
+Crear un archivo llamado estudiantes.txt y guardar tres nombres de estudiantes.
+</p>
+
+<h2 style="color:#00E5FF;">✅ Solución</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class ManejoArchivos {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter archivo =
+            new FileWriter("estudiantes.txt");
+
+            archivo.write("Juan\n");
+            archivo.write("Maria\n");
+            archivo.write("Pedro\n");
+
+            archivo.close();
+
+            System.out.println("Archivo creado");
+
+        } catch(IOException e){
+
+            System.out.println("Error");
+
+        }
+
+    }
+
+}
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">💻 Código Fuente</h2>
+
+<p>
+<a href="archivos/ManejoArchivos.java" style="color:#00E5FF;">
+📄 Ver archivo ManejoArchivos.java
+</a>
+</p>
+
+<h2 style="color:#FFD60A;">🏆 Resumen</h2>
+
+<p style="font-size:18px;">
+El manejo de archivos permite almacenar información de forma permanente. Es una herramienta esencial en aplicaciones reales, ya que permite guardar datos que pueden utilizarse posteriormente.
+</p>
+
+<a href="index.html" style="color:#00E5FF;">
+🏠 Volver al Inicio
+</a>
+
+</div>
+```
