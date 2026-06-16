@@ -1,0 +1,100 @@
+```html
+<div style="background:linear-gradient(135deg,#0F2027,#203A43,#2C5364);padding:40px;border-radius:20px;color:white;">
+
+<h1 style="text-align:center;font-size:55px;color:#00E5FF;">
+🔄 Ciclos (Bucles) en Java
+</h1>
+
+<p style="font-size:20px;text-align:justify;">
+Los ciclos son estructuras de control que permiten repetir instrucciones varias veces sin necesidad de escribir el mismo código repetidamente.
+</p>
+
+<h2 style="color:#FFD60A;">🤔 ¿Qué es un ciclo?</h2>
+
+<p style="font-size:18px;">
+Un ciclo es una herramienta que permite ejecutar un bloque de código mientras se cumpla una condición determinada.
+</p>
+
+<h2 style="color:#FFD60A;">🌍 Ejemplo de la vida real</h2>
+
+<p style="font-size:18px;">
+Imagina que un profesor necesita mostrar las calificaciones de 30 estudiantes. En lugar de escribir una instrucción para cada estudiante, puede utilizar un ciclo para repetir automáticamente la tarea.
+</p>
+
+<h2 style="color:#FFD60A;">📚 Tipos de ciclos en Java</h2>
+
+<ul style="font-size:18px;">
+<li>🔹 for</li>
+<li>🔹 while</li>
+<li>🔹 do-while</li>
+</ul>
+
+<h2 style="color:#00E5FF;">1️⃣ Ciclo For</h2>
+
+<p style="font-size:18px;">
+Se utiliza cuando conocemos el número de repeticiones.
+</p>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+for(int i = 1; i <= 5; i++){
+    System.out.println(i);
+}
+</code>
+</pre>
+
+<h3 style="color:#FFD60A;">Explicación</h3>
+
+<ul style="font-size:18px;">
+<li><b>int i = 1</b>: valor inicial.</li>
+<li><b>i <= 5</b>: condición.</li>
+<li><b>i++</b>: aumenta en 1.</li>
+<li><b>System.out.println(i)</b>: muestra el valor.</li>
+</ul>
+
+<h3 style="color:#FFD60A;">Resultado</h3>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+1
+2
+3
+4
+5
+</pre>
+
+<h2 style="color:#00E5FF;">🎯 Ejercicio</h2>
+
+<p style="font-size:18px;">
+Mostrar los números del 1 al 10 utilizando un ciclo for.
+</p>
+
+<h2 style="color:#00E5FF;">✅ Solución</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+for(int i = 1; i <= 10; i++){
+    System.out.println(i);
+}
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">💻 Código Fuente</h2>
+
+<p>
+<a href="ciclos/Ciclos.java" style="color:#00E5FF;">
+📄 Ver archivo Ciclos.java
+</a>
+</p>
+
+<h2 style="color:#FFD60A;">📝 Resumen</h2>
+
+<p style="font-size:18px;">
+Los ciclos permiten automatizar tareas repetitivas y son fundamentales en cualquier lenguaje de programación.
+</p>
+
+<a href="index.html" style="color:#00E5FF;">
+🏠 Volver al Inicio
+</a>
+
+</div>
+```
