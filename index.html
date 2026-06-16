@@ -3,44 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tutorial de Programación en Java</title>
+<title>Tutorial de Java</title>
 
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
 }
 
 /* ENCABEZADO */
 header{
     text-align:center;
-    color:white;
-    padding:40px 20px;
+    padding:30px;
 }
 
 header h1{
-    font-size:40px;
     margin:0;
-}
-
-header p{
-    margin-top:10px;
+    font-size:38px;
 }
 
 /* MENU */
 .menu{
     display:flex;
-    flex-wrap:wrap;
     justify-content:center;
+    flex-wrap:wrap;
     gap:10px;
-    padding:15px;
+    padding:10px;
 }
 
 .menu button{
     border:none;
     padding:12px 18px;
-    border-radius:10px;
+    border-radius:8px;
     cursor:pointer;
     font-weight:bold;
     color:white;
@@ -48,15 +44,15 @@ header p{
 }
 
 .menu button:hover{
-    transform:scale(1.05);
+    transform:scale(1.1);
 }
 
-/* COLORES BOTONES */
-.ciclos{background:#ff6b6b;}
-.metodos{background:#6c5ce7;}
-.vectores{background:#00b894;}
-.listas{background:#fdcb6e;}
-.archivos{background:#0984e3;}
+/* COLORES */
+.c1{background:#ff6b6b;}
+.c2{background:#6c5ce7;}
+.c3{background:#00b894;}
+.c4{background:#fdcb6e;}
+.c5{background:#0984e3;}
 
 /* CONTENIDO */
 .contenido{
@@ -65,34 +61,28 @@ header p{
     margin-top:20px;
 }
 
-/* TARJETAS */
+/* SECCIONES */
 .seccion{
     display:none;
     background:white;
+    color:black;
     padding:20px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-    margin-bottom:20px;
-}
-
-.seccion h2{
-    margin-top:0;
-    color:#333;
+    border-radius:12px;
+    margin-bottom:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 code{
     display:block;
-    background:#f4f4f4;
-    padding:15px;
-    border-radius:10px;
-    margin-top:10px;
+    background:#f1f1f1;
+    padding:12px;
+    border-radius:8px;
 }
 
 /* FOOTER */
 footer{
     text-align:center;
-    color:white;
-    padding:20px;
+    padding:15px;
     margin-top:20px;
 }
 </style>
@@ -102,81 +92,75 @@ footer{
 
 <header>
     <h1>💻 Tutorial de Programación en Java</h1>
-    <p>Guía básica para aprender programación</p>
+    <p>Proyecto educativo sencillo</p>
 </header>
 
 <!-- MENU -->
 <div class="menu">
-    <button class="ciclos" onclick="mostrar('ciclos')">Ciclos</button>
-    <button class="metodos" onclick="mostrar('metodos')">Métodos</button>
-    <button class="vectores" onclick="mostrar('vectores')">Vectores</button>
-    <button class="listas" onclick="mostrar('listas')">Listas</button>
-    <button class="archivos" onclick="mostrar('archivos')">Archivos</button>
+    <button class="c1" onclick="mostrar('ciclos')">Ciclos</button>
+    <button class="c2" onclick="mostrar('metodos')">Métodos</button>
+    <button class="c3" onclick="mostrar('vectores')">Vectores</button>
+    <button class="c4" onclick="mostrar('listas')">Listas</button>
+    <button class="c5" onclick="mostrar('archivos')">Archivos</button>
 </div>
 
 <div class="contenido">
 
-<!-- CICLOS -->
 <div id="ciclos" class="seccion">
 <h2>🔄 Ciclos</h2>
-<p>Los ciclos permiten repetir acciones varias veces.</p>
+<p>Repetición de instrucciones.</p>
 <code>
-for(int i=1; i<=5; i++){
+for(int i=1;i<=5;i++){
     System.out.println(i);
 }
 </code>
 </div>
 
-<!-- METODOS -->
 <div id="metodos" class="seccion">
 <h2>⚙️ Métodos</h2>
-<p>Un método es un bloque de código reutilizable.</p>
+<p>Bloques de código reutilizables.</p>
 <code>
-public static void saludar(){
-    System.out.println("Hola mundo");
+public static void hola(){
+    System.out.println("Hola");
 }
 </code>
 </div>
 
-<!-- VECTORES -->
 <div id="vectores" class="seccion">
 <h2>📊 Vectores</h2>
-<p>Los vectores almacenan varios datos en una sola variable.</p>
+<p>Arreglos de datos.</p>
 <code>
-int[] numeros = {1,2,3,4,5};
+int[] v = {1,2,3,4};
 </code>
 </div>
 
-<!-- LISTAS -->
 <div id="listas" class="seccion">
 <h2>📋 Listas</h2>
-<p>Las listas permiten almacenar datos dinámicos.</p>
+<p>Estructuras dinámicas.</p>
 <code>
 ArrayList<String> lista = new ArrayList<>();
 lista.add("Hola");
 </code>
 </div>
 
-<!-- ARCHIVOS -->
 <div id="archivos" class="seccion">
 <h2>📁 Archivos</h2>
-<p>Sirve para leer y escribir archivos.</p>
+<p>Lectura y escritura.</p>
 <code>
-File archivo = new File("datos.txt");
+File f = new File("datos.txt");
 </code>
 </div>
 
 </div>
 
 <footer>
-<h3>Joice Llerena - Proyecto Java</h3>
+<p>Joice Llerena - Proyecto de Java</p>
 </footer>
 
 <script>
 function mostrar(id){
-    let secciones = document.querySelectorAll(".seccion");
-    secciones.forEach(s => s.style.display = "none");
-    document.getElementById(id).style.display = "block";
+    document.querySelectorAll('.seccion').forEach(e => e.style.display='none');
+    document.getElementById(id).style.display='block';
 }
 </script>
 
