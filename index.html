@@ -8,23 +8,16 @@
 <style>
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    font-family:Arial;
+    background:#1e3c72;
     color:white;
 }
 
-/* HEADER */
 header{
     text-align:center;
-    padding:25px;
+    padding:20px;
 }
 
-header h1{
-    margin:0;
-    font-size:38px;
-}
-
-/* MENU */
 .menu{
     display:flex;
     justify-content:center;
@@ -34,51 +27,40 @@ header h1{
 }
 
 .menu button{
+    padding:10px 15px;
     border:none;
-    padding:12px 18px;
     border-radius:8px;
     cursor:pointer;
     font-weight:bold;
     color:white;
 }
 
-/* COLORES */
 .c1{background:#ff6b6b;}
 .c2{background:#6c5ce7;}
 .c3{background:#00b894;}
 .c4{background:#fdcb6e;}
 .c5{background:#0984e3;}
 
-/* CONTENIDO */
-.contenido{
-    width:85%;
-    margin:auto;
-    margin-top:20px;
-}
-
-/* SECCIONES */
 .seccion{
     display:none;
     background:white;
     color:black;
-    padding:20px;
-    border-radius:12px;
-    margin-bottom:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    width:85%;
+    margin:15px auto;
+    padding:15px;
+    border-radius:10px;
 }
 
 code{
     display:block;
-    background:#f1f1f1;
-    padding:12px;
+    background:#eee;
+    padding:10px;
     border-radius:8px;
 }
 
-/* FOOTER */
 footer{
     text-align:center;
-    padding:15px;
-    margin-top:20px;
+    padding:10px;
 }
 </style>
 </head>
@@ -86,11 +68,10 @@ footer{
 <body>
 
 <header>
-<h1>💻 Tutorial de Programación en Java</h1>
-<p>Conceptos básicos explicados de forma sencilla</p>
+<h1>💻 Tutorial de Java</h1>
+<p>Proyecto básico de programación</p>
 </header>
 
-<!-- MENU -->
 <div class="menu">
 <button class="c1" onclick="mostrar('ciclos')">Ciclos</button>
 <button class="c2" onclick="mostrar('metodos')">Métodos</button>
@@ -99,126 +80,58 @@ footer{
 <button class="c5" onclick="mostrar('archivos')">Archivos</button>
 </div>
 
-<div class="contenido">
-
-<!-- CICLOS -->
 <div id="ciclos" class="seccion">
-<h2>🔄 Ciclos (Bucles)</h2>
-
-<p>
-Los ciclos permiten repetir un bloque de código varias veces sin tener que escribirlo muchas veces.
-Son muy útiles cuando quieres automatizar tareas repetitivas.
-</p>
-
-<p><b>¿Para qué sirven?</b></p>
-<ul>
-<li>Repetir instrucciones</li>
-<li>Recorrer listas o arreglos</li>
-<li>Ahorrar código</li>
-</ul>
-
+<h2>Ciclos</h2>
+<p>Sirven para repetir instrucciones varias veces.</p>
 <code>
 for(int i=1;i<=5;i++){
-    System.out.println("Número: " + i);
+    System.out.println(i);
 }
 </code>
 </div>
 
-<!-- METODOS -->
 <div id="metodos" class="seccion">
-<h2>⚙️ Métodos</h2>
-
-<p>
-Un método es un bloque de código que realiza una tarea específica.
-Se usa para organizar mejor el programa y evitar repetir código.
-</p>
-
-<p><b>¿Para qué sirven?</b></p>
-<ul>
-<li>Reutilizar código</li>
-<li>Organizar el programa</li>
-<li>Hacer el código más limpio</li>
-</ul>
-
+<h2>Métodos</h2>
+<p>Bloques de código que realizan una tarea.</p>
 <code>
-public static void saludar(){
-    System.out.println("Hola, bienvenido");
+public static void hola(){
+    System.out.println("Hola");
 }
 </code>
 </div>
 
-<!-- VECTORES -->
 <div id="vectores" class="seccion">
-<h2>📊 Vectores (Arreglos)</h2>
-
-<p>
-Un vector es una estructura que almacena varios datos del mismo tipo en una sola variable.
-</p>
-
-<p><b>¿Para qué sirven?</b></p>
-<ul>
-<li>Guardar múltiples valores</li>
-<li>Acceder rápido a datos</li>
-<li>Organizar información</li>
-</ul>
-
+<h2>Vectores</h2>
+<p>Guardan varios datos en una sola variable.</p>
 <code>
-int[] numeros = {10, 20, 30, 40};
-System.out.println(numeros[0]);
+int[] v = {1,2,3};
 </code>
 </div>
 
-<!-- LISTAS -->
 <div id="listas" class="seccion">
-<h2>📋 Listas</h2>
-
-<p>
-Las listas son estructuras dinámicas que pueden crecer o reducirse según lo que necesites.
-</p>
-
-<p><b>¿Para qué sirven?</b></p>
-<ul>
-<li>Guardar datos sin límite fijo</li>
-<li>Agregar y eliminar elementos</li>
-<li>Manejo de información flexible</li>
-</ul>
-
+<h2>Listas</h2>
+<p>Permiten guardar datos dinámicos.</p>
 <code>
 ArrayList<String> lista = new ArrayList<>();
-lista.add("Juan");
-lista.add("Maria");
+lista.add("Hola");
 </code>
 </div>
 
-<!-- ARCHIVOS -->
 <div id="archivos" class="seccion">
-<h2>📁 Archivos</h2>
-
-<p>
-El manejo de archivos permite guardar información en el computador y leerla después.
-</p>
-
-<p><b>¿Para qué sirve?</b></p>
-<ul>
-<li>Guardar datos permanentemente</li>
-<li>Leer información guardada</li>
-<li>Crear programas más avanzados</li>
-</ul>
-
+<h2>Archivos</h2>
+<p>Sirve para guardar información.</p>
 <code>
-File archivo = new File("datos.txt");
+File f = new File("datos.txt");
 </code>
-</div>
-
 </div>
 
 <footer>
-<p>Joice Llerena - Proyecto de Java</p>
+<p>Joice Llerena</p>
 </footer>
 
 <script>
 function mostrar(id){
-    document.querySelectorAll('.seccion').forEach(e => e.style.display='none');
+    document.querySelectorAll('.seccion').forEach(s=>s.style.display='none');
     document.getElementById(id).style.display='block';
 }
 </script>
