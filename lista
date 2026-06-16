@@ -1,0 +1,120 @@
+```html
+<div style="background:linear-gradient(135deg,#3A0CA3,#7209B7,#B5179E);padding:40px;border-radius:20px;color:white;">
+
+<h1 style="text-align:center;font-size:55px;color:#FFD60A;">
+📋 Listas en Java
+</h1>
+
+<p style="font-size:20px;text-align:justify;">
+Las listas son estructuras de datos dinámicas que permiten almacenar múltiples elementos. A diferencia de los vectores, las listas pueden crecer o disminuir de tamaño durante la ejecución del programa.
+</p>
+
+<h2 style="color:#00E5FF;">🤔 ¿Qué es una Lista?</h2>
+
+<p style="font-size:18px;">
+Una lista es una colección de elementos que pueden agregarse, eliminarse o modificarse fácilmente.
+</p>
+
+<h2 style="color:#00E5FF;">🌍 Ejemplo de la vida real</h2>
+
+<p style="font-size:18px;">
+Imagina una lista de compras. Puedes agregar nuevos productos o eliminar algunos cuando ya no los necesitas. Las listas en programación funcionan de forma similar.
+</p>
+
+<h2 style="color:#FFD60A;">🎯 Ventajas de las Listas</h2>
+
+<ul style="font-size:18px;">
+<li>✅ Tamaño dinámico.</li>
+<li>✅ Fácil inserción de datos.</li>
+<li>✅ Fácil eliminación de datos.</li>
+<li>✅ Permite recorrer todos los elementos.</li>
+</ul>
+
+<h2 style="color:#00E5FF;">💻 Importar ArrayList</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+import java.util.ArrayList;
+</code>
+</pre>
+
+<h2 style="color:#00E5FF;">💻 Crear una Lista</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+ArrayList<String> nombres = new ArrayList<>();
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">📝 Agregar Elementos</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+nombres.add("Ana");
+nombres.add("Luis");
+nombres.add("Carlos");
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">📝 Mostrar Elementos</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+for(String nombre : nombres){
+    System.out.println(nombre);
+}
+</code>
+</pre>
+
+<h2 style="color:#00E5FF;">📋 Resultado</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+Ana
+Luis
+Carlos
+</pre>
+
+<h2 style="color:#00E5FF;">🎯 Ejercicio</h2>
+
+<p style="font-size:18px;">
+Crear una lista con cinco ciudades del Ecuador y mostrarlas en pantalla.
+</p>
+
+<h2 style="color:#00E5FF;">✅ Solución</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+ArrayList<String> ciudades = new ArrayList<>();
+
+ciudades.add("Ambato");
+ciudades.add("Quito");
+ciudades.add("Cuenca");
+ciudades.add("Loja");
+ciudades.add("Guayaquil");
+
+for(String ciudad : ciudades){
+    System.out.println(ciudad);
+}
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">💻 Código Fuente</h2>
+
+<p>
+<a href="listas/Listas.java" style="color:#00E5FF;">
+📄 Ver archivo Listas.java
+</a>
+</p>
+
+<h2 style="color:#FFD60A;">🏆 Resumen</h2>
+
+<p style="font-size:18px;">
+Las listas son estructuras dinámicas muy utilizadas porque permiten almacenar datos de forma flexible. Son ideales cuando no conocemos la cantidad exacta de elementos que necesitaremos.
+</p>
+
+<a href="index.html" style="color:#00E5FF;">
+🏠 Volver al Inicio
+</a>
+
+</div>
+```
