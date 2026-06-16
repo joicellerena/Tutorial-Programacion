@@ -1,113 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial de Programación en Java</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial de Programación en Java</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
+<style>
 
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
 
-        .contenedor {
-            width: 80%;
-            margin: 30px auto;
-            text-align: center;
-        }
+header{
+    text-align:center;
+    color:white;
+    padding:50px;
+}
 
-        .tema {
-            display: inline-block;
-            width: 220px;
-            margin: 15px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+header h1{
+    font-size:45px;
+}
 
-        .tema h3 {
-            color: #2c3e50;
-        }
+.contenedor{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding-bottom:40px;
+}
 
-        .boton {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+.tarjeta{
+    background:white;
+    width:260px;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
 
-        .boton:hover {
-            background-color: #2980b9;
-        }
+.tarjeta h2{
+    color:#333;
+}
 
-        footer {
-            text-align: center;
-            background-color: #2c3e50;
-            color: white;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+.tarjeta p{
+    color:#666;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.ciclos{background:#ff6b6b;}
+.metodo{background:#6c5ce7;}
+.vectores{background:#00b894;}
+.lista{background:#fdcb6e;}
+.manejo{background:#0984e3;}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Tutorial de Programación en Java</h1>
-        <p>Proyecto educativo desarrollado en GitHub</p>
-    </header>
+<header>
+    <h1>💻 Tutorial de Programación en Java</h1>
+    <p>Proyecto desarrollado para la materia de Programación</p>
+</header>
 
-    <div class="contenedor">
+<div class="contenedor">
 
-        <div class="tema">
-            <h3>Ciclos</h3>
-            <p>Aprende a utilizar for, while y do-while.</p>
-            <a href="ciclos" class="boton">Ver tema</a>
-        </div>
+<div class="tarjeta">
+<h2>🔄 Ciclos</h2>
+<p>Aprende for, while y do-while.</p>
+<a href="ciclos.html" class="boton ciclos">Ver Tema</a>
+</div>
 
-        <div class="tema">
-            <h3>Métodos</h3>
-            <p>Conoce cómo crear y utilizar métodos en Java.</p>
-            <a href="metodo" class="boton">Ver tema</a>
-        </div>
+<div class="tarjeta">
+<h2>⚙️ Métodos</h2>
+<p>Creación y uso de métodos.</p>
+<a href="metodo.html" class="boton metodo">Ver Tema</a>
+</div>
 
-        <div class="tema">
-            <h3>Vectores</h3>
-            <p>Descubre el manejo de arreglos y matrices.</p>
-            <a href="vectores" class="boton">Ver tema</a>
-        </div>
+<div class="tarjeta">
+<h2>📊 Vectores</h2>
+<p>Arreglos y matrices en Java.</p>
+<a href="vectores.html" class="boton vectores">Ver Tema</a>
+</div>
 
-        <div class="tema">
-            <h3>Listas</h3>
-            <p>Introducción al uso de listas en Java.</p>
-            <a href="lista" class="boton">Ver tema</a>
-        </div>
+<div class="tarjeta">
+<h2>📋 Listas</h2>
+<p>Manejo de colecciones y listas.</p>
+<a href="lista.html" class="boton lista">Ver Tema</a>
+</div>
 
-        <div class="tema">
-            <h3>Manejo de Archivos</h3>
-            <p>Aprende a leer y escribir archivos.</p>
-            <a href="manejo" class="boton">Ver tema</a>
-        </div>
+<div class="tarjeta">
+<h2>📁 Archivos</h2>
+<p>Lectura y escritura de archivos.</p>
+<a href="manejo.html" class="boton manejo">Ver Tema</a>
+</div>
 
-    </div>
+</div>
 
-    <footer>
-        <p>Desarrollado por joice Llerena © 2026</p>
-    </footer>
+<footer>
+    <h3>Belén Llerena - Tutorial de Java</h3>
+</footer>
 
 </body>
 </html>
