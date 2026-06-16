@@ -1,210 +1,184 @@
-<div style="background:linear-gradient(135deg,#0F172A,#1E3A8A,#2563EB);padding:60px;border-radius:25px;color:white;text-align:center;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial de Programación en Java</title>
 
-<h1 style="font-size:65px;color:#FFD700;">
-💻 Tutorial de Programación en Java
-</h1>
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
 
-<p style="font-size:24px;">
-🚀 Aprende programación desde cero
-</p>
+/* ENCABEZADO */
+header{
+    text-align:center;
+    color:white;
+    padding:40px 20px;
+}
 
-<p style="font-size:18px;max-width:900px;margin:auto;">
-Este tutorial está diseñado para estudiantes que desean aprender los fundamentos de programación en Java. Haz clic en cada tema para ver la explicación completa.
-</p>
+header h1{
+    font-size:40px;
+    margin:0;
+}
 
+header p{
+    margin-top:10px;
+}
+
+/* MENU */
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    padding:15px;
+}
+
+.menu button{
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    color:white;
+    transition:0.3s;
+}
+
+.menu button:hover{
+    transform:scale(1.05);
+}
+
+/* COLORES BOTONES */
+.ciclos{background:#ff6b6b;}
+.metodos{background:#6c5ce7;}
+.vectores{background:#00b894;}
+.listas{background:#fdcb6e;}
+.archivos{background:#0984e3;}
+
+/* CONTENIDO */
+.contenido{
+    width:85%;
+    margin:auto;
+    margin-top:20px;
+}
+
+/* TARJETAS */
+.seccion{
+    display:none;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom:20px;
+}
+
+.seccion h2{
+    margin-top:0;
+    color:#333;
+}
+
+code{
+    display:block;
+    background:#f4f4f4;
+    padding:15px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    color:white;
+    padding:20px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>💻 Tutorial de Programación en Java</h1>
+    <p>Guía básica para aprender programación</p>
+</header>
+
+<!-- MENU -->
+<div class="menu">
+    <button class="ciclos" onclick="mostrar('ciclos')">Ciclos</button>
+    <button class="metodos" onclick="mostrar('metodos')">Métodos</button>
+    <button class="vectores" onclick="mostrar('vectores')">Vectores</button>
+    <button class="listas" onclick="mostrar('listas')">Listas</button>
+    <button class="archivos" onclick="mostrar('archivos')">Archivos</button>
 </div>
 
-<br>
+<div class="contenido">
 
-# 📚 Conceptos Fundamentales
-
-<details>
-<summary style="font-size:30px;color:#1565C0;"><b>🔄 Ciclos (Bucles)</b></summary>
-
-## ¿Qué es un ciclo?
-
-Un ciclo permite repetir instrucciones varias veces sin escribir el mismo código repetidamente.
-
-## ¿Para qué sirve?
-
-- Automatizar tareas.
-- Reducir código.
-- Recorrer datos.
-
-## Ejemplo
-
-```java
+<!-- CICLOS -->
+<div id="ciclos" class="seccion">
+<h2>🔄 Ciclos</h2>
+<p>Los ciclos permiten repetir acciones varias veces.</p>
+<code>
 for(int i=1; i<=5; i++){
     System.out.println(i);
 }
-```
+</code>
+</div>
 
-## Explicación
-
-- `i=1` inicia el contador.
-- `i<=5` es la condición.
-- `i++` incrementa el valor.
-
-## Ejercicio
-
-Mostrar los números del 1 al 10.
-
-## Solución
-
-```java
-for(int i=1; i<=10; i++){
-    System.out.println(i);
+<!-- METODOS -->
+<div id="metodos" class="seccion">
+<h2>⚙️ Métodos</h2>
+<p>Un método es un bloque de código reutilizable.</p>
+<code>
+public static void saludar(){
+    System.out.println("Hola mundo");
 }
-```
+</code>
+</div>
 
-</details>
-
----
-
-<details>
-<summary style="font-size:30px;color:#2E7D32;"><b>⚙️ Métodos (Funciones)</b></summary>
-
-## ¿Qué es un método?
-
-Un método es un bloque de código reutilizable.
-
-## ¿Para qué sirve?
-
-- Organizar programas.
-- Evitar repetir código.
-
-## Ejemplo
-
-```java
-public static int suma(int a, int b){
-    return a+b;
-}
-```
-
-## Ejercicio
-
-Crear un método que multiplique dos números.
-
-## Solución
-
-```java
-public static int multiplicar(int a, int b){
-    return a*b;
-}
-```
-
-</details>
-
----
-
-<details>
-<summary style="font-size:30px;color:#EF6C00;"><b>📊 Vectores y Matrices</b></summary>
-
-## ¿Qué es un vector?
-
-Es una estructura que almacena varios datos del mismo tipo.
-
-```java
+<!-- VECTORES -->
+<div id="vectores" class="seccion">
+<h2>📊 Vectores</h2>
+<p>Los vectores almacenan varios datos en una sola variable.</p>
+<code>
 int[] numeros = {1,2,3,4,5};
-```
+</code>
+</div>
 
-## ¿Qué es una matriz?
+<!-- LISTAS -->
+<div id="listas" class="seccion">
+<h2>📋 Listas</h2>
+<p>Las listas permiten almacenar datos dinámicos.</p>
+<code>
+ArrayList<String> lista = new ArrayList<>();
+lista.add("Hola");
+</code>
+</div>
 
-Organiza datos en filas y columnas.
+<!-- ARCHIVOS -->
+<div id="archivos" class="seccion">
+<h2>📁 Archivos</h2>
+<p>Sirve para leer y escribir archivos.</p>
+<code>
+File archivo = new File("datos.txt");
+</code>
+</div>
 
-```java
-int[][] matriz = {
-   {1,2},
-   {3,4}
-};
-```
+</div>
 
-## Ejercicio
+<footer>
+<h3>Joice Llerena - Proyecto Java</h3>
+</footer>
 
-Crear un vector con cinco nombres.
+<script>
+function mostrar(id){
+    let secciones = document.querySelectorAll(".seccion");
+    secciones.forEach(s => s.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
+</script>
 
-## Solución
-
-```java
-String[] nombres = {
-   "Ana",
-   "Luis",
-   "Carlos",
-   "Pedro",
-   "Maria"
-};
-```
-
-</details>
-
----
-
-<details>
-<summary style="font-size:30px;color:#C2185B;"><b>📋 Listas</b></summary>
-
-## ¿Qué es una lista?
-
-Una colección dinámica de datos.
-
-## Ejemplo
-
-```java
-ArrayList<String> nombres =
-new ArrayList<>();
-
-nombres.add("Ana");
-nombres.add("Luis");
-```
-
-## Ventajas
-
-- Tamaño dinámico.
-- Fácil manipulación.
-
-## Ejercicio
-
-Crear una lista con cinco ciudades.
-
-</details>
-
----
-
-<details>
-<summary style="font-size:30px;color:#6A1B9A;"><b>📁 Manejo de Archivos</b></summary>
-
-## ¿Qué es?
-
-Permite guardar y leer información desde archivos.
-
-## Ejemplo
-
-```java
-FileWriter archivo =
-new FileWriter("datos.txt");
-
-archivo.write("Hola Mundo");
-
-archivo.close();
-```
-
-## Ejercicio
-
-Crear un archivo llamado estudiantes.txt.
-
-## Solución
-
-```java
-archivo.write("Juan\n");
-archivo.write("Maria\n");
-archivo.write("Pedro\n");
-```
-
-</details>
-
----
-
-# 🏆 Conclusión
-
-La programación se aprende practicando. Estudia cada tema, analiza los ejemplos y resuelve ejercicios para fortalecer tus conocimientos en Java.
-
-🌟 **¡Éxitos en tu aprendizaje!**
+</body>
+</html>
