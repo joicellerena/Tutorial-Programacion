@@ -1,0 +1,98 @@
+```html
+<div style="background:linear-gradient(135deg,#240046,#5A189A,#7B2CBF);padding:40px;border-radius:20px;color:white;">
+
+<h1 style="text-align:center;font-size:55px;color:#FFD60A;">
+⚙️ Métodos (Funciones) en Java
+</h1>
+
+<p style="font-size:20px;text-align:justify;">
+Los métodos son bloques de código que permiten realizar una tarea específica. Gracias a ellos podemos reutilizar instrucciones sin tener que escribirlas varias veces.
+</p>
+
+<h2 style="color:#00E5FF;">🤔 ¿Qué es un método?</h2>
+
+<p style="font-size:18px;">
+Un método es un conjunto de instrucciones agrupadas bajo un nombre. Cuando necesitamos ejecutar esas instrucciones, simplemente llamamos al método.
+</p>
+
+<h2 style="color:#00E5FF;">🌍 Ejemplo de la vida real</h2>
+
+<p style="font-size:18px;">
+Imagina una calculadora. Cada operación (sumar, restar, multiplicar y dividir) puede representarse mediante un método diferente.
+</p>
+
+<h2 style="color:#FFD60A;">🎯 Ventajas de los métodos</h2>
+
+<ul style="font-size:18px;">
+<li>✅ Evitan repetir código.</li>
+<li>✅ Facilitan el mantenimiento.</li>
+<li>✅ Mejoran la organización.</li>
+<li>✅ Permiten reutilizar soluciones.</li>
+</ul>
+
+<h2 style="color:#00E5FF;">📚 Sintaxis</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+public static tipo nombreMetodo(){
+    instrucciones;
+}
+</code>
+</pre>
+
+<h2 style="color:#00E5FF;">💻 Ejemplo</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+public static int suma(int a, int b){
+    return a + b;
+}
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">📝 Explicación</h2>
+
+<ul style="font-size:18px;">
+<li><b>public</b>: puede utilizarse desde cualquier parte del programa.</li>
+<li><b>static</b>: pertenece a la clase.</li>
+<li><b>int</b>: tipo de dato que devuelve.</li>
+<li><b>suma</b>: nombre del método.</li>
+<li><b>a y b</b>: parámetros de entrada.</li>
+</ul>
+
+<h2 style="color:#00E5FF;">🎯 Ejercicio</h2>
+
+<p style="font-size:18px;">
+Crear un método que multiplique dos números enteros.
+</p>
+
+<h2 style="color:#00E5FF;">✅ Solución</h2>
+
+<pre style="background:#111;padding:15px;border-radius:10px;color:#00FF88;">
+<code>
+public static int multiplicar(int a, int b){
+    return a * b;
+}
+</code>
+</pre>
+
+<h2 style="color:#FFD60A;">💻 Código Fuente</h2>
+
+<p>
+<a href="metodos/Metodos.java" style="color:#00E5FF;">
+📄 Ver archivo Metodos.java
+</a>
+</p>
+
+<h2 style="color:#FFD60A;">🏆 Resumen</h2>
+
+<p style="font-size:18px;">
+Los métodos permiten dividir un programa en pequeñas tareas organizadas, facilitando la lectura, mantenimiento y reutilización del código.
+</p>
+
+<a href="index.html" style="color:#00E5FF;">
+🏠 Volver al Inicio
+</a>
+
+</div>
+```
